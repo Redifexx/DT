@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Test Website
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1 style="font-family: 'Times New Roman', Times, serif" style="font-size: 150px">
+            <canvas id="title" width="1000" height="100"></canvas>
+            <script> 
+                var c = document.getElementById("title")
+                var ctx = c.getContext("2d");
+                //ctx.font = "60px HelveticaNeue";
+                ctx.font = "60px Comic Sans MS";
+                ctx.fillStyle = "#12446E";
+                ctx.textAlign = 'center';
+                ctx.fillText('Disease Trends', (c.width / 2), (c.height / 2));
+            </script>
+        </h1>
+        <canvas id="Box" width="1000" height="500" style="border: 1px solid black "></canvas>
+        <script src="script.js"> </script>
+    </body>
+</html>
